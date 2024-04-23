@@ -1,14 +1,11 @@
-import { Header } from "./components/Header/Header"
-import PageLayout from "./components/layout/PageLayout"
-
-
+import { NavigationMenuDemo } from "./components/Header/Header"
 
 function App() {
 
   return (
-    <PageLayout>
-      <Header/>
-    </PageLayout>
+    <>
+    <NavigationMenuDemo/>
+    </>
   )
 }
 
