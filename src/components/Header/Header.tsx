@@ -16,18 +16,18 @@ import { Separator } from "../ui/separator"
 export function NavigationMenuDemo() {
   return (
     <>
-    <div className="flex items-center lg:px-[400px] justify-center lg:justify-between p-4 lg:flex-row flex-col gap-2">
+    <div className="flex items-center lg:px-[400px] justify-center lg:justify-center p-4 lg:flex-col flex-col gap-2">
     <h1 className="text-white font-bold">&lt;helena.dev/&gt;</h1>
     <NavigationMenu className="text-white">
       <NavigationMenuList>
-      <NavigationMenuItem>
+      <NavigationMenuItem className="cursor-pointer">
           {/* <Link href="/docs" legacyBehavior passHref> */}
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Inicio
             </NavigationMenuLink>
           {/* </Link> */}
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="cursor-pointer">
           {/* <Link href="/docs" legacyBehavior passHref> */}
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contato
