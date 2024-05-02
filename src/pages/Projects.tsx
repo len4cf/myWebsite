@@ -51,7 +51,7 @@ const Projects = () => {
                                 </a>
                             <a href={projeto.Github} target="_blank" rel="noopener noreferrer">
                                 <Button variant='link' className="font-bold text-white">
-                                    Github
+                                Github
                                     <BsGithub className="ml-2" />
                                 </Button>
                                 </a>

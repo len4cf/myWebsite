@@ -20,7 +20,7 @@ const Contato = () => {
         setOpen(true);
       };
     
-      const handleClose = (event, reason) => {
+      const handleClose = () => {
           setOpen(false);
       };
 
@@ -42,7 +42,7 @@ const Contato = () => {
           email: email
         }
     
-        emailjs.send("service_jaf2sqm", "template_3f9j2os", templateParams, "Op2MSNOljf_Z2W5wd").then((response) => {
+        emailjs.send("service_jaf2sqm", "template_3f9j2os", templateParams, "Op2MSNOljf_Z2W5wd").then(() => {
           setName("")
           setEmail("")
           setMessage("")
