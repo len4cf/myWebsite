@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
     return ( 
-        <div className='flex items-center justify-center mt-[8%] gap-20 flex-row-reverse'>
+        <div className='lg:mx-[20%] lg:mt-[4%] flex flex-row-reverse justify-around items-center'>
             <div>
                 <div>
                 <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-4xl">

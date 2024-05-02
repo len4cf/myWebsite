@@ -5,21 +5,24 @@ import Projects from "./pages/Projects"
 import Contato from "./pages/Contato"
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NotFoundPage from "./pages/NotFound"
 
 
 export default function App() {
 
 return (
   <>
-    <NavigationMenuDemo />
     <BrowserRouter>
+    <NavigationMenuDemo />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contato" element={<Contato />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
-    <Home />  
   </>
 )
 

@@ -12,6 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Separator } from "../ui/separator"
+import { NavLink } from "react-router-dom"
 
 export function NavigationMenuDemo() {
   return (
@@ -21,28 +22,30 @@ export function NavigationMenuDemo() {
     <NavigationMenu className="text-white">
       <NavigationMenuList>
       <NavigationMenuItem className="cursor-pointer">
-          {/* <Link href="/docs" legacyBehavior passHref> */}
+          <NavLink to="/" > 
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Inicio
             </NavigationMenuLink>
-          {/* </Link> */}
+          </NavLink> 
         </NavigationMenuItem>
         <NavigationMenuItem className="cursor-pointer">
-          {/* <Link href="/docs" legacyBehavior passHref> */}
+          <NavLink to={'/contato'}>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contato
             </NavigationMenuLink>
-          {/* </Link> */}
+          </NavLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Sobre</NavigationMenuTrigger>
+              <NavigationMenuTrigger>
+                Sobre
+              </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-1 p-3 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem href="/docs" title="Sobre mim">
-              Conheça um pouco mais sobre minhas habilidades.
+              <ListItem title="Sobre mim" href='/about'>
+                  Conheça um pouco mais sobre minhas habilidades.
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Projetos">
-              Explore meu portfólio de projetos e veja o que eu posso fazer por você
+              <ListItem title="Projetos" href="/projects">
+                  Explore meu portfólio de projetos e veja o que eu posso fazer por você
               </ListItem>
             </ul>
           </NavigationMenuContent>
