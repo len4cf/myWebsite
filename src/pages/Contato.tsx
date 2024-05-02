@@ -3,8 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import emailjs from '@emailjs/browser'
-import { Box, Snackbar } from "@mui/material";
-import { FaCheck } from "react-icons/fa";
+import { Snackbar } from "@mui/material";
 
 
 
