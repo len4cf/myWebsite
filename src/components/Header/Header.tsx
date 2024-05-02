@@ -17,7 +17,7 @@ import { NavLink } from "react-router-dom"
 export function NavigationMenuDemo() {
   return (
     <>
-    <div className="flex items-center lg:px-[400px] justify-center lg:justify-center p-4 lg:flex-row lg:justify-between flex-col gap-2">
+    <div className="flex items-center lg:px-[400px] justify-center p-4 lg:flex-row lg:justify-between flex-col gap-2">
     <a className="text-white font-bold" href="/home">&lt;helena.dev/&gt;</a>
     <NavigationMenu className="text-white">
       <NavigationMenuList>

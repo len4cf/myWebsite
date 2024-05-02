@@ -5,8 +5,8 @@ import { BsGithub } from "react-icons/bs";
 
 const Home = () => {
     return ( 
-        <div className='lg:mx-[20%] lg:mt-[4%] flex flex-row-reverse justify-around items-center'>
-            <div>
+        <div className='lg:mx-[20%] lg:mt-[4%] mx-10 flex lg:flex-row-reverse flex-col lg:justify-around items-center lg:gap-0 gap-14'>
+            <div className="lg:mt-0 mt-[30%]">
                 <div>
                 <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-4xl">
                 Olá ✌
@@ -29,7 +29,7 @@ const Home = () => {
                     </Button>
                 </div>
             </div>
-            <img src="https://assets-global.website-files.com/64c73d04a946980a4476537e/64d455276eae71b4f2472b6d_New%20Beginnings.svg" alt="Foto ilustrativa de garota sentada no sofá lendo jornal" className="lg:w-[500px]"/>
+            <img src="https://assets-global.website-files.com/64c73d04a946980a4476537e/64d455276eae71b4f2472b6d_New%20Beginnings.svg" alt="Foto ilustrativa de garota sentada no sofá lendo jornal" className="lg:w-[500px] w-[300px]"/>
         </div>
      );
 }
