@@ -8,7 +8,7 @@ const Home = () => {
       <div className="lg:mt-0 mt-[30%]">
         <div>
           <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-4xl">
-            aaa ✌
+            Olá ✌
           </h1>
           <p className="text-3xl font-thin mt-4">
             Meu nome é{" "}
