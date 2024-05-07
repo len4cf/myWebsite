@@ -4,16 +4,13 @@ import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import Contato from "./pages/Contato"
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom"
 import NotFoundPage from "./pages/NotFound"
 
-
 export default function App() {
-
-return (
-  <>
-    <BrowserRouter>
-    <NavigationMenuDemo />
+  return (
+    <>
+      <NavigationMenuDemo />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
@@ -22,9 +19,6 @@ return (
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </BrowserRouter>
-  </>
-)
-
+    </>
+  )
 }
-  
