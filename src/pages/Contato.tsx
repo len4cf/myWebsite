@@ -29,7 +29,7 @@ const Contato = () => {
     };
 
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: any) => {
         e.preventDefault()
     
         if(name === '' || email === '' || message === '') {

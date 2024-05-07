@@ -35,7 +35,7 @@ export function NavigationMenuDemo() {
             </NavigationMenuLink>
           </NavLink>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem >
               <NavigationMenuTrigger>
                 Sobre
               </NavigationMenuTrigger>
@@ -68,7 +68,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-transparent hover:text-zinc-400 focus:bg-transparent focus:text-accent-foreground ",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-transparent hover:text-zinc-400 focus:bg-transparent focus:text-accent-foreground",
             className
           )}
           {...props}
