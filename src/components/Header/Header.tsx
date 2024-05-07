@@ -17,43 +17,48 @@ import { NavLink } from "react-router-dom"
 export function NavigationMenuDemo() {
   return (
     <>
-    <div className="flex items-center lg:px-[400px] justify-center p-4 lg:flex-row lg:justify-between flex-col gap-2">
-    <a className="text-white font-bold" href="/home">&lt;helena.dev/&gt;</a>
-    <NavigationMenu className="text-white">
-      <NavigationMenuList>
-      <NavigationMenuItem className="cursor-pointer">
-          <NavLink to="/" > 
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Inicio
-            </NavigationMenuLink>
-          </NavLink> 
-        </NavigationMenuItem>
-        <NavigationMenuItem className="cursor-pointer">
-          <NavLink to={'/contato'}>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contato
-            </NavigationMenuLink>
-          </NavLink>
-        </NavigationMenuItem>
-        <NavigationMenuItem >
-              <NavigationMenuTrigger>
-                Sobre
-              </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-1 p-3 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem title="Sobre mim" href='/about'>
-                  Conheça um pouco mais sobre minhas habilidades.
-              </ListItem>
-              <ListItem title="Projetos" href="/projects">
-                  Explore meu portfólio de projetos e veja o que eu posso fazer por você
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-    </div>
-    <Separator className="border border-zinc-900	" />
+      <div className="flex items-center lg:px-[400px] justify-center p-4 lg:flex-row lg:justify-between flex-col gap-2">
+        <NavLink className="text-white font-bold" to={"/home"}>
+          &lt;helena.dev/&gt;
+        </NavLink>
+        <NavigationMenu className="text-white">
+          <NavigationMenuList>
+            <NavigationMenuItem className="cursor-pointer">
+              <NavLink to="/">
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Inicio
+                </NavigationMenuLink>
+              </NavLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem className="cursor-pointer">
+              <NavLink to={"/contato"}>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Contato
+                </NavigationMenuLink>
+              </NavLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Sobre</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-1 p-3 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <NavLink to={"/about"}>
+                    <ListItem title="Sobre mim">
+                      Conheça um pouco mais sobre minhas habilidades.
+                    </ListItem>
+                  </NavLink>
+                  <NavLink to={"/projects"}>
+                    <ListItem title="Projetos" href="/projects">
+                      Explore meu portfólio de projetos e veja o que eu posso
+                      fazer por você
+                    </ListItem>
+                  </NavLink>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
+      <Separator className="border border-zinc-900	" />
     </>
   )
 }
