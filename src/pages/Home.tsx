@@ -4,7 +4,7 @@ import { BsGithub } from "react-icons/bs"
 
 const Home = () => {
   return (
-    <div className="lg:mx-[20%] lg:mt-[4%] mx-10 flex lg:flex-row-reverse flex-col lg:justify-around items-center lg:gap-0 gap-14">
+    <div className="lg:mx-[20%] lg:mt-[4%] mx-10 flex lg:flex-row-reverse flex-col lg:justify-center items-center lg:gap-20 gap-14">
       <div className="lg:mt-0 mt-[30%]">
         <div>
           <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-4xl">
