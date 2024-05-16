@@ -8,7 +8,7 @@ const Home = () => {
       <div className="lg:mt-0 mt-[30%]">
         <div>
           <h1 className="scroll-m-20 text-2xl font-bold tracking-tight lg:text-4xl">
-            Olá ✌
+            Oie! ✌
           </h1>
           <p className="text-3xl font-thin mt-4">
             Meu nome é{" "}
@@ -21,8 +21,7 @@ const Home = () => {
         <div className="flex gap-5">
           <Button variant="secondary" className="font-bold mt-4">
             <a href="/curriculo.pdf" download>
-              {" "}
-              Download CV{" "}
+              Download CV
             </a>
             <DownloadIcon className="ml-2" />
           </Button>
