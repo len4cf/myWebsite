@@ -1,9 +1,7 @@
 import Grid from "@mui/material/Grid" // Grid version 1
 import Box from "@mui/material/Box"
 import { useState } from "react"
-import { MdArrowDropDown, MdExpandMore } from "react-icons/md"
-import { IoAdd } from "react-icons/io5"
-import { FaMinus } from "react-icons/fa"
+import { MdExpandMore } from "react-icons/md"
 
 const About = () => {
   const dataAtual = new Date()

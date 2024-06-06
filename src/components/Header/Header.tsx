@@ -46,8 +46,8 @@ export function NavigationMenuDemo() {
                       Conheça um pouco mais sobre minhas habilidades.
                     </ListItem>
                   </NavLink>
-                  <NavLink to={"/projects"}>
-                    <ListItem title="Projetos" href="/projects">
+                  <NavLink to={"/building"}>
+                    <ListItem title="Projetos 🚧" href="/projects">
                       Explore meu portfólio de projetos e veja o que eu posso
                       fazer por você
                     </ListItem>
