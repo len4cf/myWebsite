@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { DownloadIcon } from "@chakra-ui/icons"
 import { BsGithub } from "react-icons/bs"
+import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -19,12 +20,16 @@ const Home = () => {
           </h4>
         </div>
         <div className="flex gap-5">
-          <Button variant="secondary" className="font-bold mt-4">
-            <a href="/curriculo.pdf" download>
+          <Link
+            to="/curriculo.pdf"
+            target="_blank"
+            download="curriculo_helenacarvalho"
+          >
+            <Button variant="secondary" className="font-bold mt-4">
               Download CV
-            </a>
-            <DownloadIcon className="ml-2" />
-          </Button>
+              <DownloadIcon className="ml-2" />
+            </Button>
+          </Link>
           <Button variant="link" className="font-bold mt-4 text-white">
             <a href="https://github.com/len4cf">Github</a>
             <BsGithub className="ml-2" />
