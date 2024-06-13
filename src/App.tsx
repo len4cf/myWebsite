@@ -2,6 +2,8 @@ import { Suspense, lazy } from "react"
 import { Route, Routes } from "react-router-dom"
 import { NavigationMenuDemo } from "./components/Header/Header"
 import Building from "./pages/Building"
+import CircularProgress from "@mui/material/CircularProgress"
+import { Box } from "@mui/material"
 
 const About = lazy(() => import("./pages/About"))
 const Home = lazy(() => import("./pages/Home"))
@@ -13,7 +15,13 @@ export default function App() {
   return (
     <>
       <NavigationMenuDemo />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <Box>
+            <CircularProgress />
+          </Box>
+        }
+      >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
