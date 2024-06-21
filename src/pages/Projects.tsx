@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button"
 import { BsGithub } from "react-icons/bs"
 import { TbWorld } from "react-icons/tb"
-import pngPic from "../assets/pngPic.png"
 import project1 from "../assets/project1.png"
 import project2 from "../assets/project2.png"
+import project3 from "../assets/project3.png"
+import project4 from "../assets/project4.png"
 
 const Projects = () => {
   const projetos = [
@@ -24,12 +25,20 @@ const Projects = () => {
       imagem: project2,
     },
     {
-      Nome: "Projeto3",
+      Nome: "Cinelena",
       Descrição:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      Github: "www.github.com",
-      Live: "www.live.com",
-      imagem: pngPic,
+        "Esse site foi desenvolvido utilizando ReactJS, Typescript, TailwindCSS, chakra/ui, React Router e The Movie Database API. Esse projeto é um site de cinema que mostra os filmes em cartaz e os filmes que estão em alta no momento, junto com suas informações.",
+      Github: "https://github.com/len4cf/cineLena",
+      Live: "https://cine-lena.vercel.app/",
+      imagem: project3,
+    },
+    {
+      Nome: "Controle Financeiro",
+      Descrição:
+        "Esse site foi desenvolvido utilizando ReactJS, TailwindCSS. Esse projeto é um site de controle financeiro que ajuda a organizar suas finanças, mostrando seus gastos e ganhos.",
+      Github: "https://github.com/len4cf/financialControl",
+      Live: "https://financial-control-alpha.vercel.app/",
+      imagem: project4,
     },
   ]
 
@@ -39,7 +48,7 @@ const Projects = () => {
         Projetos
       </h1>
       {projetos.map((projeto) => (
-        <div className="flex lg:flex-row lg:items-stretch flex-col items-center gap-10 lg:w-[700px] w-[300px] min-h-[200px] border p-5 border-zinc-700 rounded text-center lg:text-left">
+        <div className="flex lg:flex-row lg:items-stretch flex-col items-center gap-10 lg:w-[900px] w-[300px] min-h-[200px] border p-5 border-zinc-700 rounded text-center lg:text-left">
           <img src={projeto.imagem} alt="aaa" className="w-60 rounded" />
           <div className="flex flex-col gap-2">
             <h1 className="text-2xl font-bold">{projeto.Nome}</h1>
